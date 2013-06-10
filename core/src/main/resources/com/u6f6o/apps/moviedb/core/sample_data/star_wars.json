@@ -1,0 +1,141 @@
+{"id": 1891, "title": "Star Wars: Episode V - The Empire Strikes Back", "description": "The epic saga continues as Luke Skywalker, in hopes of defeating the evil Galactic Empire, learns the ways of the Jedi from aging master Yoda. But Darth Vader is more determined than ever to capture Luke. Meanwhile, rebel leader Princess Leia, cocky Han Solo, Chewbacca, and droids C-3PO and R2-D2 are thrown into various stages of capture, betrayal and despair.", "releaseDate": 327708000000, "genres": ["ACTION", "FAMILY", "ADVENTURE", "SCIENCE_FICTION"], "cast": {
+    "actors": [
+        {
+            "realName": "Mark Hamill",
+            "characterName": "Luke Skywalker",
+            "order": 7
+        },
+        {
+            "realName": "Harrison Ford",
+            "characterName": "Han Solo",
+            "order": 8
+        },
+        {
+            "realName": "Carrie Fisher",
+            "characterName": "Princess Leia",
+            "order": 9
+        },
+        {
+            "realName": "David Prowse",
+            "characterName": "Darth Vader",
+            "order": 10
+        },
+        {
+            "realName": "Billy Dee Williams",
+            "characterName": "Lando Calrissian",
+            "order": 11
+        },
+        {
+            "realName": "Anthony Daniels",
+            "characterName": "C-3PO",
+            "order": 12
+        },
+        {
+            "realName": "Peter Mayhew",
+            "characterName": "Chewbacca",
+            "order": 13
+        },
+        {
+            "realName": "James Earl Jones",
+            "characterName": "Darth Vader (Voice)",
+            "order": 15
+        },
+        {
+            "realName": "Kenny Baker",
+            "characterName": "R2-D2",
+            "order": 16
+        },
+        {
+            "realName": "Frank Oz",
+            "characterName": "Yoda (Voice)",
+            "order": 17
+        },
+        {
+            "realName": "Alec Guinness",
+            "characterName": "Ben 'Obi-wan' Kenobi",
+            "order": 18
+        },
+        {
+            "realName": "Jeremy Bulloch",
+            "characterName": "Boba Fett",
+            "order": 19
+        },
+        {
+            "realName": "John Hollis",
+            "characterName": "Lando's aide",
+            "order": 20
+        },
+        {
+            "realName": "Jack Purvis",
+            "characterName": "Chief Ugnaught",
+            "order": 21
+        },
+        {
+            "realName": "Des Webb",
+            "characterName": "Snow Creature",
+            "order": 22
+        },
+        {
+            "realName": "Clive Revill",
+            "characterName": "Emperor (voice)",
+            "order": 23
+        },
+        {
+            "realName": "Julian Glover",
+            "characterName": "Imperial Force General Veers",
+            "order": 24
+        },
+        {
+            "realName": "Kenneth Colley",
+            "characterName": "Imperial Force Admiral Piett",
+            "order": 25
+        },
+        {
+            "realName": "John Ratzenberger",
+            "characterName": "Rebel Force Major Derlin",
+            "order": 28
+        }
+    ],
+    "crew": [
+        {
+            "realName": "Irvin Kershner",
+            "department": "Directing",
+            "job": "Director"
+        },
+        {
+            "realName": "Gary Kurtz",
+            "department": "Production",
+            "job": "Producer"
+        },
+        {
+            "realName": "George Lucas",
+            "department": "Production",
+            "job": "Producer"
+        },
+        {
+            "realName": "George Lucas",
+            "department": "Writing",
+            "job": "Author"
+        },
+        {
+            "realName": "Leigh Brackett",
+            "department": "Writing",
+            "job": "Screenplay"
+        },
+        {
+            "realName": "Lawrence Kasdan",
+            "department": "Writing",
+            "job": "Screenplay"
+        },
+        {
+            "realName": "John Williams",
+            "department": "Sound",
+            "job": "Original Music Composer"
+        },
+        {
+            "realName": "Brian Johnson",
+            "department": "Crew",
+            "job": "Special Effects"
+        }
+    ]
+}, "runtime": 124, "webSite": ""}

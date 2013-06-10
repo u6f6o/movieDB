@@ -1,0 +1,121 @@
+{"id": 763, "title": "Dead Alive", "description": "When a Sumatran rat-monkey bites Lionel Cosgrove's mother, she's transformed into a zombie and begins killing (and transforming) the entire town while Lionel races to keep things under control.", "releaseDate": 713656800000, "genres": ["FOREIGN", "COMEDY", "HORROR"], "cast": {
+    "actors": [
+        {
+            "realName": "Timothy Balme",
+            "characterName": "Lionel Cosgrove",
+            "order": 14
+        },
+        {
+            "realName": "Diana Peñalver",
+            "characterName": "Paquita Maria Sanchez",
+            "order": 15
+        },
+        {
+            "realName": "Elizabeth Moody",
+            "characterName": "Mum",
+            "order": 16
+        },
+        {
+            "realName": "Ian Watkin",
+            "characterName": "Uncle Les",
+            "order": 17
+        },
+        {
+            "realName": "Brenda Kendall",
+            "characterName": "Nurse McTavish",
+            "order": 18
+        },
+        {
+            "realName": "Stephen Papps",
+            "characterName": "Stephen Papps",
+            "order": 20
+        },
+        {
+            "realName": "Murray Keane",
+            "characterName": "Scroat",
+            "order": 21
+        },
+        {
+            "realName": "Glenis Levestam",
+            "characterName": "Nora Matheson",
+            "order": 22
+        },
+        {
+            "realName": "Lewis Rowe",
+            "characterName": "Mr. Matheson",
+            "order": 23
+        },
+        {
+            "realName": "Stuart Devenie",
+            "characterName": "Void",
+            "order": 25
+        }
+    ],
+    "crew": [
+        {
+            "realName": "Peter Jackson",
+            "department": "Directing",
+            "job": "Director"
+        },
+        {
+            "realName": "Stephen Sinclair",
+            "department": "Writing",
+            "job": "Screenplay"
+        },
+        {
+            "realName": "Fran Walsh",
+            "department": "Writing",
+            "job": "Screenplay"
+        },
+        {
+            "realName": "Peter Jackson",
+            "department": "Writing",
+            "job": "Screenplay"
+        },
+        {
+            "realName": "Jamie Selkirk",
+            "department": "Production",
+            "job": "Producer"
+        },
+        {
+            "realName": "Peter Dasent",
+            "department": "Sound",
+            "job": "Original Music Composer"
+        },
+        {
+            "realName": "Murray Milne",
+            "department": "Camera",
+            "job": "Director of Photography"
+        },
+        {
+            "realName": "Jamie Selkirk",
+            "department": "Editing",
+            "job": "Editor"
+        },
+        {
+            "realName": "Fran Walsh",
+            "department": "Production",
+            "job": "Casting"
+        },
+        {
+            "realName": "Kevin Leonard-Jones",
+            "department": "Art",
+            "job": "Production Design"
+        },
+        {
+            "realName": "Ed Mulholand",
+            "department": "Art",
+            "job": "Art Direction"
+        },
+        {
+            "realName": "Chris Elliott",
+            "department": "Costume & Make-Up",
+            "job": "Costume Design"
+        },
+        {
+            "realName": "Jim Booth",
+            "department": "Production",
+            "job": "Producer"
+        }
+    ]
+}, "runtime": 97, "webSite": ""}

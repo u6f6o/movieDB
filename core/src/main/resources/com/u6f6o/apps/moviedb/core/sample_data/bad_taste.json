@@ -1,0 +1,66 @@
+{"id": 9964, "title": "Bad Taste", "description": "The population of a small town disappears and is replaced by aliens that chase human flesh for their intergalactic fast-food chain.", "releaseDate": 566262000000, "genres": ["FOREIGN", "COMEDY", "SCIENCE_FICTION", "ACTION", "HORROR"], "cast": {
+    "actors": [
+        {
+            "realName": "Terry Potter",
+            "characterName": "Ozzy",
+            "order": 8
+        },
+        {
+            "realName": "Pete O'Herne",
+            "characterName": "Barry",
+            "order": 9
+        },
+        {
+            "realName": "Craig Smith",
+            "characterName": "Giles",
+            "order": 10
+        },
+        {
+            "realName": "Mike Minett",
+            "characterName": "Frank",
+            "order": 11
+        },
+        {
+            "realName": "Peter Jackson",
+            "characterName": "Derek / Robert",
+            "order": 12
+        }
+    ],
+    "crew": [
+        {
+            "realName": "Peter Jackson",
+            "department": "Directing",
+            "job": "Director"
+        },
+        {
+            "realName": "Peter Jackson",
+            "department": "Writing",
+            "job": "Screenplay"
+        },
+        {
+            "realName": "Peter Jackson",
+            "department": "Production",
+            "job": "Producer"
+        },
+        {
+            "realName": "Peter Jackson",
+            "department": "Camera",
+            "job": "Director of Photography"
+        },
+        {
+            "realName": "Peter Jackson",
+            "department": "Editing",
+            "job": "Editor"
+        },
+        {
+            "realName": "Jamie Selkirk",
+            "department": "Editing",
+            "job": "Editor"
+        },
+        {
+            "realName": "Michelle Scullion",
+            "department": "Sound",
+            "job": "Music"
+        }
+    ]
+}, "runtime": 91, "webSite": ""}

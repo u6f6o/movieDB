@@ -1,0 +1,131 @@
+{"id": 694, "title": "The Shining", "description": "Jack Torrance accept a job at the Overlook Hotel, where he, along with his wife Wendy and their son Danny must live isolated from the rest of the world for the winter, but they aren't prepared for the madness that lurks within.", "releaseDate": 327880800000, "genres": ["HORROR", "THRILLER", "DRAMA"], "cast": {
+    "actors": [
+        {
+            "realName": "Jack Nicholson",
+            "characterName": "Jack Torrance",
+            "order": 18
+        },
+        {
+            "realName": "Shelley Duvall",
+            "characterName": "Wendy Torrance",
+            "order": 19
+        },
+        {
+            "realName": "Danny Lloyd",
+            "characterName": "Danny Torrance",
+            "order": 20
+        },
+        {
+            "realName": "Scatman Crothers",
+            "characterName": "Dick Hallorann",
+            "order": 21
+        },
+        {
+            "realName": "Barry Nelson",
+            "characterName": "Stuart Ullman",
+            "order": 22
+        },
+        {
+            "realName": "Philip Stone",
+            "characterName": "Delbert Grady",
+            "order": 23
+        },
+        {
+            "realName": "Joe Turkel",
+            "characterName": "Lloyd the Bartender",
+            "order": 24
+        },
+        {
+            "realName": "Anne Jackson",
+            "characterName": "Doctor",
+            "order": 25
+        }
+    ],
+    "crew": [
+        {
+            "realName": "Stanley Kubrick",
+            "department": "Directing",
+            "job": "Director"
+        },
+        {
+            "realName": "Stanley Kubrick",
+            "department": "Writing",
+            "job": "Screenplay"
+        },
+        {
+            "realName": "Stephen King",
+            "department": "Writing",
+            "job": "Novel"
+        },
+        {
+            "realName": "Diane Johnson",
+            "department": "Writing",
+            "job": "Screenplay"
+        },
+        {
+            "realName": "Stanley Kubrick",
+            "department": "Production",
+            "job": "Producer"
+        },
+        {
+            "realName": "Jan Harlan",
+            "department": "Production",
+            "job": "Executive Producer"
+        },
+        {
+            "realName": "Wendy Carlos",
+            "department": "Sound",
+            "job": "Original Music Composer"
+        },
+        {
+            "realName": "Rachel Elkind",
+            "department": "Sound",
+            "job": "Original Music Composer"
+        },
+        {
+            "realName": "John Alcott",
+            "department": "Camera",
+            "job": "Director of Photography"
+        },
+        {
+            "realName": "Ray Lovejoy",
+            "department": "Editing",
+            "job": "Editor"
+        },
+        {
+            "realName": "James Liggat",
+            "department": "Production",
+            "job": "Casting"
+        },
+        {
+            "realName": "Roy Walker",
+            "department": "Art",
+            "job": "Production Design"
+        },
+        {
+            "realName": "Leslie Tomkins",
+            "department": "Art",
+            "job": "Art Direction"
+        },
+        {
+            "realName": "Milena Canonero",
+            "department": "Costume & Make-Up",
+            "job": "Costume Design"
+        },
+        {
+            "realName": "Barbara Daly",
+            "department": "Costume & Make-Up",
+            "job": "Makeup Artist"
+        },
+        {
+            "realName": "Tom Smith",
+            "department": "Costume & Make-Up",
+            "job": "Makeup Artist"
+        },
+        {
+            "realName": "Douglas Twiddy",
+            "department": "Production",
+            "job": "Production Manager"
+        }
+    ]
+}, "runtime": 142, "webSite": ""}

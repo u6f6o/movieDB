@@ -1,0 +1,151 @@
+{"id": 497, "title": "The Green Mile", "description": "A supernatural tale set on death row in a Southern prison, where gentle giant John Coffey possesses the mysterious power to heal people's ailments. When the cellblock's head guard, Paul Edgecomb, recognizes Coffey's miraculous gift, he tries desperately to help stave off the condemned man's execution.", "releaseDate": 944434800000, "genres": ["FANTASY", "SCIENCE_FICTION", "DRAMA"], "cast": {
+    "actors": [
+        {
+            "realName": "Tom Hanks",
+            "characterName": "Paul Edgecomb",
+            "order": 4
+        },
+        {
+            "realName": "Michael Clarke Duncan",
+            "characterName": "John Coffey",
+            "order": 5
+        },
+        {
+            "realName": "Bonnie Hunt",
+            "characterName": "Jan Edgecomb",
+            "order": 16
+        },
+        {
+            "realName": "David Morse",
+            "characterName": "Brutus \"Brutal\" Howell",
+            "order": 17
+        },
+        {
+            "realName": "Michael Jeter",
+            "characterName": "Eduard Delacroix",
+            "order": 18
+        },
+        {
+            "realName": "Graham Greene",
+            "characterName": "Arlen Bitterbuck",
+            "order": 19
+        },
+        {
+            "realName": "Patricia Clarkson",
+            "characterName": "Melinda Moores",
+            "order": 20
+        },
+        {
+            "realName": "Dabbs Greer",
+            "characterName": "Old Paul Edgecomb",
+            "order": 21
+        },
+        {
+            "realName": "Gary Sinise",
+            "characterName": "Lawyer Burt Hammersmith",
+            "order": 22
+        },
+        {
+            "realName": "Doug Hutchison",
+            "characterName": "Percy Wetmore",
+            "order": 23
+        },
+        {
+            "realName": "Sam Rockwell",
+            "characterName": "'Wild Bill' Wharton",
+            "order": 24
+        },
+        {
+            "realName": "James Cromwell",
+            "characterName": "Warden Hal Moores",
+            "order": 25
+        },
+        {
+            "realName": "Barry Pepper",
+            "characterName": "Dean Stanton",
+            "order": 26
+        },
+        {
+            "realName": "Harry Dean Stanton",
+            "characterName": "Toot-Toot",
+            "order": 27
+        },
+        {
+            "realName": "Jeffrey DeMunn",
+            "characterName": "Harry Terwilliger",
+            "order": 28
+        },
+        {
+            "realName": "Eve Brent",
+            "characterName": "Elaine Connelly",
+            "order": 29
+        }
+    ],
+    "crew": [
+        {
+            "realName": "Frank Darabont",
+            "department": "Directing",
+            "job": "Director"
+        },
+        {
+            "realName": "Frank Darabont",
+            "department": "Writing",
+            "job": "Screenplay"
+        },
+        {
+            "realName": "Stephen King",
+            "department": "Writing",
+            "job": "Author"
+        },
+        {
+            "realName": "David Valdes",
+            "department": "Production",
+            "job": "Producer"
+        },
+        {
+            "realName": "Frank Darabont",
+            "department": "Production",
+            "job": "Producer"
+        },
+        {
+            "realName": "Thomas Newman",
+            "department": "Sound",
+            "job": "Original Music Composer"
+        },
+        {
+            "realName": "Jeff Coopwood",
+            "department": "Sound",
+            "job": "Original Music Composer"
+        },
+        {
+            "realName": "David Tattersall",
+            "department": "Camera",
+            "job": "Director of Photography"
+        },
+        {
+            "realName": "Richard Francis-Bruce",
+            "department": "Editing",
+            "job": "Editor"
+        },
+        {
+            "realName": "Mali Finn",
+            "department": "Production",
+            "job": "Casting"
+        },
+        {
+            "realName": "Terence Marsh",
+            "department": "Art",
+            "job": "Production Design"
+        },
+        {
+            "realName": "Michael Seirton",
+            "department": "Art",
+            "job": "Set Decoration"
+        },
+        {
+            "realName": "Karyn Wagner",
+            "department": "Costume & Make-Up",
+            "job": "Costume Design"
+        }
+    ]
+}, "runtime": 189, "webSite": "http://thegreenmile.warnerbros.com/"}

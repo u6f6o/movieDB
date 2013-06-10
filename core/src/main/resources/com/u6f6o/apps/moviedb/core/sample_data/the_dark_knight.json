@@ -1,0 +1,161 @@
+{"id": 155, "title": "The Dark Knight", "description": "Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker.", "releaseDate": 1216332000000, "genres": ["ACTION", "DRAMA", "CRIME"], "cast": {
+    "actors": [
+        {
+            "realName": "Heath Ledger",
+            "characterName": "Joker",
+            "order": 3
+        },
+        {
+            "realName": "Maggie Gyllenhaal",
+            "characterName": "Rachel Dawes",
+            "order": 8
+        },
+        {
+            "realName": "Eric Roberts",
+            "characterName": "Sal Maroni",
+            "order": 9
+        },
+        {
+            "realName": "James Smith",
+            "characterName": "Tommy",
+            "order": 14
+        },
+        {
+            "realName": "Aaron Eckhart",
+            "characterName": "Harvey Dent",
+            "order": 15
+        },
+        {
+            "realName": "Gary Oldman",
+            "characterName": "James Gordon",
+            "order": 16
+        },
+        {
+            "realName": "Michael Caine",
+            "characterName": "Alfred",
+            "order": 17
+        },
+        {
+            "realName": "Monique Gabriela Curnen",
+            "characterName": "Det. Anna Ramirez",
+            "order": 18
+        },
+        {
+            "realName": "Ron Dean",
+            "characterName": "Det. Michael Wuertz",
+            "order": 19
+        },
+        {
+            "realName": "Cillian Murphy",
+            "characterName": "Jonathan Crane / The Scarecrow",
+            "order": 20
+        },
+        {
+            "realName": "Chin Han",
+            "characterName": "Lau",
+            "order": 21
+        },
+        {
+            "realName": "Ritchie Coster",
+            "characterName": "The Chechen",
+            "order": 24
+        },
+        {
+            "realName": "Anthony Michael Hall",
+            "characterName": "Mike Engel",
+            "order": 25
+        },
+        {
+            "realName": "Keith Szarabajka",
+            "characterName": "Det. Gerard Stephens",
+            "order": 26
+        },
+        {
+            "realName": "Colin McFarlane",
+            "characterName": "Commissioner Gillian B. Loeb",
+            "order": 27
+        },
+        {
+            "realName": "Edison Chen",
+            "characterName": "LSI VP",
+            "order": 28
+        },
+        {
+            "realName": "Nestor Carbonell",
+            "characterName": "Mayor Anthony Garcia",
+            "order": 32
+        },
+        {
+            "realName": "Michael Jai White",
+            "characterName": "Gambol",
+            "order": 33
+        },
+        {
+            "realName": "Morgan Freeman",
+            "characterName": "Lucius Fox",
+            "order": 34
+        },
+        {
+            "realName": "Christian Bale",
+            "characterName": "Batman",
+            "order": 35
+        }
+    ],
+    "crew": [
+        {
+            "realName": "Christopher Nolan",
+            "department": "Directing",
+            "job": "Director"
+        },
+        {
+            "realName": "Jonathan Nolan",
+            "department": "Writing",
+            "job": "Screenplay"
+        },
+        {
+            "realName": "Hans Zimmer",
+            "department": "Sound",
+            "job": "Original Music Composer"
+        },
+        {
+            "realName": "Wally Pfister",
+            "department": "Camera",
+            "job": "Director of Photography"
+        },
+        {
+            "realName": "James Newton Howard",
+            "department": "Sound",
+            "job": "Original Music Composer"
+        },
+        {
+            "realName": "Christopher Nolan",
+            "department": "Production",
+            "job": "Producer"
+        },
+        {
+            "realName": "Charles Roven",
+            "department": "Production",
+            "job": "Producer"
+        },
+        {
+            "realName": "Emma Thomas",
+            "department": "Production",
+            "job": "Producer"
+        },
+        {
+            "realName": "Christopher Nolan",
+            "department": "Writing",
+            "job": "Screenplay"
+        },
+        {
+            "realName": "Christopher Nolan",
+            "department": "Writing",
+            "job": "Story"
+        },
+        {
+            "realName": "David S. Goyer",
+            "department": "Writing",
+            "job": "Story"
+        }
+    ]
+}, "runtime": 152, "webSite": "http://thedarkknight.warnerbros.com/dvdsite/"}
