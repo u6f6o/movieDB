@@ -1,0 +1,36 @@
+{
+    "adult":false,
+    "backdrop_path":"/qayeOS1ySq99RmGKiELH7sCOLpv.jpg",
+    "budget":20000000,
+    "genres":[
+        {"id":28,"name":"Action"},
+        {"id":35,"name":"Comedy"},
+        {"id":53,"name":"Thriller"}
+    ],
+    "homepage":"http://www.vivamachete.com/",
+    "id":23631,
+    "imdb_id":"tt0985694",
+    "original_title":"Machete",
+    "overview":"Machete (Danny Trejo) is a former Mexican Federale who plays by his own rules, and doesn't answer to anybody. In the wake of a harrowing encounter with feared drug lord Torrez (Steven Seagal), Machete finds himself in Texas, where the shadowy Booth (Jeff Fahey) offers him the opportunity to make some quick cash by assassinating the unscrupulous Senator McLaughlin (Robert De Niro). When the job goes awry and Machete realizes he's been set up, he turns to fierce taco queen Luz (Michelle Rodriguez), heavily armed holy man Padre (Cheech Marin), and trigger-happy socialite April (Lindsay Lohan) to show Booth that he just messed with the wrong Mexican. But before they can get to Booth, Machete's gang will have to contend with blade-wielding ICE agent Sartana (Jessica Alba), who never met an adversary she couldn't flay.",
+    "popularity":7174.543,
+    "poster_path":"/ozLzXiC2QdFSoi42vPyOhoY72Me.jpg",
+    "production_companies":[
+        {"name":"Dune Entertainment","id":444},
+        {"name":"Dune Entertainment III","id":6332}
+    ],
+    "production_countries":[
+        {"iso_3166_1":"US","name":"United States of America"}
+    ],
+    "release_date":"2010-09-02",
+    "revenue":31327899,
+    "runtime":105,
+    "spoken_languages":[
+        {"iso_639_1":"en","name":"English"},
+        {"iso_639_1":"es","name":"Español"}
+    ],
+    "status":"Released",
+    "tagline":"He was given an offer he couldn't refuse...",
+    "title":"Machete",
+    "vote_average":7.4,
+    "vote_count":51
+}
