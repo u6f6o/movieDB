@@ -11,7 +11,9 @@ import org.springframework.context.annotation.Import;
  * Author: u6f6o
  */
 @Configuration
-@Import( ServiceLayerConfig.class )
+@Import({ ServiceLayerConfig.class,
+        com.u6f6o.apps.moviedb.ext_apis.base.config.ServiceLayerConfig.class // ULF: never access this directly in here
+})
 @ComponentScan( basePackageClasses =  {
     MovieController.class
 })

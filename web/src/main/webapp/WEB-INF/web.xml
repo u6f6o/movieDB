@@ -24,7 +24,7 @@
 
         <init-param>
             <param-name>contextConfigLocation</param-name>
-            <param-value>com.u6f6o.apps.movie_db.config.web.ServletConfig</param-value>
+            <param-value>com.u6f6o.apps.moviedb.web.config.ServletConfig</param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
