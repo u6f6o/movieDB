@@ -1,0 +1,31 @@
+apply plugin: 'war'
+apply plugin: 'jetty'
+
+sourceSets {
+    main {
+        resources {
+            srcDir 'src/main/java'
+            srcDir 'src/main/resources'
+        }
+    }
+    test {
+        resources {
+            srcDir 'src/test/resources'
+            srcDir 'src/test/groovy'
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+    mavenRepo(url: 'http://maven.springframework.org/release')
+    mavenRepo(url: 'http://maven.springframework.org/milestone')
+}
+
+dependencies {
+    compile project(':core'),
+            "org.springframework:spring-webmvc:${springVersion}"
+
+    groovy "org.codehaus.groovy:groovy-all:2.0.5"
+
+}
