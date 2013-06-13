@@ -26,7 +26,8 @@ repositories {
 }
 
 dependencies {
-    compile "commons-lang:commons-lang:2.6",
+    compile "com.google.code.findbugs:annotations:2.0.1",
+            "commons-lang:commons-lang:2.6",
             "commons-collections:commons-collections:3.2.1",
             "commons-codec:commons-codec:1.7",
             "org.codehaus.jackson:jackson-mapper-asl:1.9.9",

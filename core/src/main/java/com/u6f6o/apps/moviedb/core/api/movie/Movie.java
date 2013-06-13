@@ -1,6 +1,7 @@
 package com.u6f6o.apps.moviedb.core.api.movie;
 
 import com.u6f6o.apps.moviedb.core.api.movie.cast.Cast;
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import org.apache.commons.lang.builder.ToStringBuilder;
 import org.apache.commons.lang.builder.ToStringStyle;
 import org.codehaus.jackson.annotate.JsonCreator;
@@ -68,10 +69,12 @@ public class Movie {
         this.description = description;
     }
 
+    @SuppressFBWarnings(value = "EI_EXPOSE_REP")
     public Date getReleaseDate() {
         return releaseDate;
     }
 
+    @SuppressFBWarnings(value = "EI_EXPOSE_REP2")
     public void setReleaseDate( Date releaseDate ) {
         this.releaseDate = releaseDate;
     }
