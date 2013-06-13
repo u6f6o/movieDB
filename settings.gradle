@@ -1,3 +1,4 @@
 include 'extApis'
 include 'core'
+include 'samples'
 include 'web'

@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
  * Created with IntelliJ IDEA.
  * Author: u6f6o
  */
-@Service( "movieLoaderService" )
+@Service()
 public class MovieLoaderService {
 
     private static final Log LOGGER = LogFactory.getLog( MovieLoaderService.class );

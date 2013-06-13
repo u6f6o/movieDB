@@ -10,7 +10,8 @@ import com.u6f6o.apps.moviedb.ext_apis.themoviedb.domain.TheMovieDBCast
 import com.u6f6o.apps.moviedb.ext_apis.themoviedb.domain.TheMovieDBCrewMember
 import com.u6f6o.apps.moviedb.ext_apis.themoviedb.domain.TheMovieDBGenre
 import com.u6f6o.apps.moviedb.ext_apis.themoviedb.domain.TheMovieDBMovie
-import com.u6f6o.apps.moviedb.ext_apis.themoviedb.sample_data.TheMovieDBSampleData
+import com.u6f6o.apps.moviedb.samples.CastSample
+import com.u6f6o.apps.moviedb.samples.MovieSample;
 import org.apache.commons.lang.math.RandomUtils
 import org.joda.time.DateTime
 import spock.lang.Specification
@@ -51,8 +52,8 @@ class MovieTransformerServiceSpec extends Specification{
         movie != null
 
         where:
-            movie = TheMovieDBSampleData.MACHETE.readMovieFromJSON()
-            cast = TheMovieDBSampleData.MACHETE.readCastFromJSON()
+            movie = MovieSample.MACHETE.readMovieFromJSON(TheMovieDBMovie.class)
+            cast = CastSample.MACHETE.readCastFromJSON(TheMovieDBCast.class)
     }
 
     def "should transform empty movie"(){

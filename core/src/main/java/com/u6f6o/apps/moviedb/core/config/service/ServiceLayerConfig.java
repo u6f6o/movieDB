@@ -14,10 +14,9 @@ import org.springframework.web.client.RestTemplate;
  * Author: u6f6o
  */
 @Configuration
-@Import( PersistenceLayerConfig.class )
-@ComponentScan( basePackageClasses = {
-        MovieLoaderService.class
-})
+@Import({ com.u6f6o.apps.moviedb.ext_apis.base.config.ServiceLayerConfig.class,
+        PersistenceLayerConfig.class})
+@ComponentScan( basePackageClasses = { MovieLoaderService.class })
 public class ServiceLayerConfig {
     @Bean
     public RestTemplate restTemplate() {

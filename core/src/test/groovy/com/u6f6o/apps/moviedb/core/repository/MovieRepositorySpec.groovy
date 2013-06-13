@@ -1,8 +1,9 @@
 package com.u6f6o.apps.moviedb.core.repository
 
+import com.u6f6o.apps.moviedb.core.api.movie.Movie
 import com.u6f6o.apps.moviedb.core.api.movie.cast.CrewMember
 import com.u6f6o.apps.moviedb.core.config.persistence.PersistenceLayerConfig
-import com.u6f6o.apps.moviedb.core.sample_data.MovieSample
+import com.u6f6o.apps.moviedb.samples.MovieSample;
 import org.joda.time.Interval
 import org.joda.time.format.DateTimeFormat
 import org.joda.time.format.DateTimeFormatter
@@ -15,7 +16,7 @@ import spock.lang.Stepwise
 import spock.lang.Unroll
 
 import static com.u6f6o.apps.moviedb.core.api.movie.Genre.*
-import static com.u6f6o.apps.moviedb.core.sample_data.MovieSample.*
+import static com.u6f6o.apps.moviedb.samples.MovieSample.*
 
 
 /**
@@ -46,7 +47,7 @@ class MovieRepositorySpec extends Specification {
         then:
             dbIdsByEnums.get(movieEnum) != null
         where:
-            movie << MovieSample.values().collect{ it.readMovieFromJSON() }
+            movie << MovieSample.values().collect{ it.readMovieFromJSON(Movie.class) }
             movieEnum << MovieSample.values()
     }
 

@@ -1,16 +1,18 @@
 package com.u6f6o.apps.moviedb.core.service
 
+import com.u6f6o.apps.moviedb.core.api.movie.Movie
 import com.u6f6o.apps.moviedb.core.config.service.ServiceLayerConfig
 import com.u6f6o.apps.moviedb.core.repository.MovieRepository
-import com.u6f6o.apps.moviedb.ext_apis.themoviedb.sample_data.TheMovieDBSampleData
+import com.u6f6o.apps.moviedb.ext_apis.themoviedb.domain.TheMovieDBMovie
 import com.u6f6o.apps.moviedb.ext_apis.themoviedb.service.TheMovieDBService
+import com.u6f6o.apps.moviedb.samples.MovieSample
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.test.context.ActiveProfiles
 import org.springframework.test.context.ContextConfiguration
 import spock.lang.Specification
 import spock.lang.Unroll
 
-import static com.u6f6o.apps.moviedb.core.sample_data.MovieSample.*
+import static com.u6f6o.apps.moviedb.samples.MovieSample.*
 
 /**
  * @author u6f6o
@@ -48,7 +50,7 @@ class MovieLoaderServiceSpec extends Specification{
             internalMovie != null
             internalMovie.equals(movie)
         where:
-            sampleMovie << [BRAINDEAD, INCEPTION, THE_DARK_KNIGHT].collect{it.readMovieFromJSON()}
+            sampleMovie << [BRAINDEAD, INCEPTION, THE_DARK_KNIGHT].collect{it.readMovieFromJSON(Movie.class)}
     }
 
 
@@ -80,7 +82,7 @@ class MovieLoaderServiceSpec extends Specification{
             movie != null
             movie.equals(movieInternal)
         where:
-            movieInternal = MEET_THE_FEEBLES.readMovieFromJSON()
+            movieInternal = MEET_THE_FEEBLES.readMovieFromJSON(Movie.class)
     }
 
 
@@ -100,8 +102,8 @@ class MovieLoaderServiceSpec extends Specification{
             movie != null
             movie.equals(movieInternal)
         where:
-            movieInternal = FEARLESS.readMovieFromJSON()
-            movieExternal = TheMovieDBSampleData.FEARLESS.readMovieFromJSON()
+            movieInternal = FEARLESS.readMovieFromJSON(Movie.class)
+            movieExternal = MovieSample.FEARLESS.readMovieFromJSON(TheMovieDBMovie.class)
     }
 }
 

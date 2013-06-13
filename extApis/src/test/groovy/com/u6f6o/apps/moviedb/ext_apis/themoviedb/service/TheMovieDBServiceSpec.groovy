@@ -1,7 +1,8 @@
 package com.u6f6o.apps.moviedb.ext_apis.themoviedb.service
 
+import static com.u6f6o.apps.moviedb.samples.MovieSample.*
 import com.u6f6o.apps.moviedb.ext_apis.base.config.ServiceLayerConfig
-import com.u6f6o.apps.moviedb.ext_apis.themoviedb.sample_data.TheMovieDBSampleData
+import com.u6f6o.apps.moviedb.ext_apis.themoviedb.domain.TheMovieDBMovie
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.test.context.ActiveProfiles
 import org.springframework.test.context.ContextConfiguration
@@ -41,6 +42,8 @@ class TheMovieDBServiceSpec extends Specification {
 
         when:
             def fetchedMovie = theMovieDBService.fetchMovie(movieSample.id, false)
+            println fetchedMovie.title
+            println fetchedMovie.posterPath
         then:
             fetchedMovie.adult == movieSample.adult
             fetchedMovie.backDropPath == movieSample.backDropPath
@@ -63,7 +66,7 @@ class TheMovieDBServiceSpec extends Specification {
             fetchedMovie.tagLine == movieSample.tagLine
             fetchedMovie.title == movieSample.title
         where:
-            movieSample << [ TheMovieDBSampleData.FEARLESS, TheMovieDBSampleData.MACHETE, TheMovieDBSampleData.STAR_WARS ]
-                    .collect{ it.readMovieFromJSON() }
+            movieSample << [ FEARLESS, MACHETE, STAR_WARS ]
+                    .collect{ it.readMovieFromJSON(TheMovieDBMovie.class) }
     }
 }
