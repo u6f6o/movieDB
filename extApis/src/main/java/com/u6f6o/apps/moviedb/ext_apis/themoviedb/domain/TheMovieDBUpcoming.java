@@ -1,14 +1,19 @@
 package com.u6f6o.apps.moviedb.ext_apis.themoviedb.domain;
 
+import org.codehaus.jackson.annotate.JsonIgnore;
+import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 import org.codehaus.jackson.annotate.JsonProperty;
+import org.codehaus.jackson.annotate.JsonUnwrapped;
+import org.codehaus.jackson.map.util.JSONWrappedObject;
 
 import java.util.LinkedHashSet;
 
 /**
- * Created with IntelliJ IDEA.
- * Author: u6f6o
+ * @author Ulf Gitschthaler
  */
-public class TheMovieDBSearchResult {
+
+@JsonIgnoreProperties(value = "dates")
+public class TheMovieDBUpcoming {
 
     private Integer page;
     @JsonProperty( "total_pages" )
@@ -20,14 +25,14 @@ public class TheMovieDBSearchResult {
     private LinkedHashSet<TheMovieDBMovie> searchResults;
 
     @JsonProperty( "op_path" )
-    private String opPath;
+    private String opPatch;
 
 
     public Integer getPage() {
         return page;
     }
 
-    public void setPage( Integer page ) {
+    public void setPage(Integer page) {
         this.page = page;
     }
 
@@ -35,7 +40,7 @@ public class TheMovieDBSearchResult {
         return totalPages;
     }
 
-    public void setTotalPages( Integer totalPages ) {
+    public void setTotalPages(Integer totalPages) {
         this.totalPages = totalPages;
     }
 
@@ -43,7 +48,7 @@ public class TheMovieDBSearchResult {
         return totalResults;
     }
 
-    public void setTotalResults( Integer totalResults ) {
+    public void setTotalResults(Integer totalResults) {
         this.totalResults = totalResults;
     }
 
@@ -51,15 +56,15 @@ public class TheMovieDBSearchResult {
         return searchResults;
     }
 
-    public void setSearchResults( LinkedHashSet<TheMovieDBMovie> searchResults ) {
+    public void setSearchResults(LinkedHashSet<TheMovieDBMovie> searchResults) {
         this.searchResults = searchResults;
     }
 
-    public String getOpPath() {
-        return opPath;
+    public String getOpPatch() {
+        return opPatch;
     }
 
-    public void setOpPath(String opPath) {
-        this.opPath = opPath;
+    public void setOpPatch(String opPatch) {
+        this.opPatch = opPatch;
     }
 }

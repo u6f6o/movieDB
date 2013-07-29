@@ -1,8 +1,8 @@
 package com.u6f6o.apps.moviedb.web.rest;
 
+import com.u6f6o.apps.moviedb.core.service.MovieLoaderService;
 import com.u6f6o.apps.moviedb.ext_apis.themoviedb.domain.TheMovieDBSearchResult;
 import com.u6f6o.apps.moviedb.ext_apis.themoviedb.service.TheMovieDBService;
-import org.apache.commons.codec.EncoderException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,28 +16,22 @@ import java.util.Map;
 
 @Controller
 @RequestMapping( "/search/movie" )
-public class SearchController { // TODO rename?
+public class SearchController { // ULF rename?
 
-    private final TheMovieDBService theMovieDBService;
+    private final MovieLoaderService movieLoaderService;
 
     @Autowired
-    public SearchController( TheMovieDBService theMovieDBService ) {
-        this.theMovieDBService = theMovieDBService;
+    public SearchController( MovieLoaderService movieLoaderService ) {
+        this.movieLoaderService = movieLoaderService;
     }
-
 
     @ResponseBody
     @RequestMapping( method = RequestMethod.GET, produces = "application/json" )
     public Map<String, Object> search( @RequestParam String movieTitle ) {
+        TheMovieDBSearchResult searchResult =  movieLoaderService.search(movieTitle);
         Map<String, Object> response = new HashMap<String, Object>();
-
-        try {
-            TheMovieDBSearchResult searchResult =  theMovieDBService.searchMovie( movieTitle );
-            response.put( "result", searchResult );
-            response.put( "success", "true" );
-        } catch ( EncoderException e ) {
-            response.put( "success", "false" );
-        }
+        response.put( "result", searchResult );
+        response.put( "success", "true" );
         return response;
     }
 }

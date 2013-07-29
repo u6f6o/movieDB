@@ -1,5 +1,7 @@
 package com.u6f6o.apps.moviedb.ext_apis.themoviedb.service
 
+import groovy.json.JsonSlurper
+
 import static com.u6f6o.apps.moviedb.samples.MovieSample.*
 import com.u6f6o.apps.moviedb.ext_apis.base.config.ServiceLayerConfig
 import com.u6f6o.apps.moviedb.ext_apis.themoviedb.domain.TheMovieDBMovie
@@ -26,7 +28,7 @@ class TheMovieDBServiceSpec extends Specification {
     def "check count of found movies"(){
 
         when:
-            def movieResults = theMovieDBService.searchMovie(movieTitle)
+            def movieResults = theMovieDBService.search(movieTitle)
         then:
             movieResults.totalResults == expResults;
             movieResults.searchResults.every { it.title.contains(movieTitle)}
@@ -41,7 +43,7 @@ class TheMovieDBServiceSpec extends Specification {
     def "check content of found movies" (){
 
         when:
-            def fetchedMovie = theMovieDBService.fetchMovie(movieSample.id, false)
+            def fetchedMovie = theMovieDBService.fetch(movieSample.id, false)
             println fetchedMovie.title
             println fetchedMovie.posterPath
         then:
@@ -69,4 +71,23 @@ class TheMovieDBServiceSpec extends Specification {
             movieSample << [ FEARLESS, MACHETE, STAR_WARS ]
                     .collect{ it.readMovieFromJSON(TheMovieDBMovie.class) }
     }
+
+
+    def "check upcoming movies"(){
+        given:
+            def apiKey = System.getenv('THE_MOVIE_DB_API_KEY')
+            def apiUrl = new URL("http://api.themoviedb.org/3/movie/upcoming?api_key=$apiKey")
+            def upcomingJSON = new JsonSlurper().parseText(apiUrl.text)
+        when:
+            def upcomingMovies = theMovieDBService.fetchUpcoming()
+        then:
+            upcomingMovies != null
+            upcomingMovies.totalResults == upcomingJSON.total_results
+            upcomingJSON.results.every { t ->
+                upcomingMovies.searchResults.any { p ->
+                    p.title == t.title
+                }
+            }
+    }
+
 }
