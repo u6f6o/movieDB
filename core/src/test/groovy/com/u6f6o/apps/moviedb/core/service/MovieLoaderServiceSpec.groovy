@@ -36,7 +36,6 @@ class MovieLoaderServiceSpec extends Specification{
 
     @Unroll("should load and transform '#sampleMovie.title' from themoviedb.org" )
     def "load and transform movies from themoviedb.org"(){
-
         expect:
             movieRepository.fetchMovieByTheMovieDBId(sampleMovie.id) == null
         when:
@@ -55,7 +54,6 @@ class MovieLoaderServiceSpec extends Specification{
 
 
     def "should not find movie in internal nor in external database" (){
-
         given:
             def service = new MovieLoaderService(movieRepositoryMock, theMovieDBServiceMock,
                     movieSaveServiceMock, movieTransformerServiceMock)
@@ -63,14 +61,13 @@ class MovieLoaderServiceSpec extends Specification{
             def movie = service.load( 1111l )
         then:
             1 * movieRepositoryMock.fetchMovieByTheMovieDBId(1111l) >> null
-            1 * theMovieDBServiceMock.fetchMovie(1111l, true) >> null
+            1 * theMovieDBServiceMock.fetch(1111l, true) >> null
             0 * _
             movie == null
     }
 
 
     def "should find movie in internal database"(){
-
         given:
             def service = new MovieLoaderService(movieRepositoryMock, theMovieDBServiceMock,
                     movieSaveServiceMock, movieTransformerServiceMock)
@@ -87,7 +84,6 @@ class MovieLoaderServiceSpec extends Specification{
 
 
     def "should find movie in external database"(){
-
         given:
             def service = new MovieLoaderService(movieRepositoryMock, theMovieDBServiceMock,
                     movieSaveServiceMock, movieTransformerServiceMock)
@@ -95,7 +91,7 @@ class MovieLoaderServiceSpec extends Specification{
             def movie = service.load( 7549l )
         then:
             1 * movieRepositoryMock.fetchMovieByTheMovieDBId( 7549l ) >> null
-            1 * theMovieDBServiceMock.fetchMovie( 7549l, true ) >> movieExternal
+            1 * theMovieDBServiceMock.fetch( 7549l, true ) >> movieExternal
             1 * movieTransformerServiceMock.transform(movieExternal) >> movieInternal
             1 * movieSaveServiceMock.saveAsynchronously(movieInternal)
             0 * _

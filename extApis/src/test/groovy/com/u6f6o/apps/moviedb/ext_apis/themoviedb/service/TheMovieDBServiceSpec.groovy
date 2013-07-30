@@ -36,7 +36,7 @@ class TheMovieDBServiceSpec extends Specification {
             movieTitle                  |   expResults
             "Machete"                   |   6
             "House of Flying Daggers"   |   1
-            "Dark Knight"               |   9
+            "Dark Knight"               |   11
     }
 
     @Unroll("should check content for '#movieSample.title'")
@@ -49,7 +49,6 @@ class TheMovieDBServiceSpec extends Specification {
         then:
             fetchedMovie.adult == movieSample.adult
             fetchedMovie.backDropPath == movieSample.backDropPath
-            fetchedMovie.belongsToCollection == movieSample.belongsToCollection
             fetchedMovie.budget == movieSample.budget
             fetchedMovie.genres == movieSample.genres
             fetchedMovie.homepage == movieSample.homepage
