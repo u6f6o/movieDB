@@ -2,6 +2,7 @@ package com.u6f6o.apps.moviedb.core.service;
 
 import com.u6f6o.apps.moviedb.core.api.movie.Genre;
 import com.u6f6o.apps.moviedb.core.api.movie.Movie;
+import com.u6f6o.apps.moviedb.core.api.movie.aggregation.MovieQueryResult;
 import com.u6f6o.apps.moviedb.core.api.movie.cast.Actor;
 import com.u6f6o.apps.moviedb.core.api.movie.cast.Cast;
 import com.u6f6o.apps.moviedb.core.api.movie.cast.CrewMember;
@@ -20,9 +21,27 @@ import java.util.*;
 
 @Service( "movieTransformerService" )
 public class MovieTransformerService {
+
     private static final Log LOGGER = LogFactory.getLog( MovieTransformerService.class );
     private static final DateTimeFormatter THE_MOVIE_DB_DATE_FORMATTER = DateTimeFormat.forPattern( "yyyy-MM-dd" );
 
+
+    public MovieQueryResult transform(TheMovieDBSearchResult searchResult) {
+        MovieQueryResult result = new MovieQueryResult();
+        for (TheMovieDBMovie theMovieDBMovie : searchResult.getSearchResults()) {
+            result.addCandidate(transform(theMovieDBMovie));
+        }
+        return result;
+    }
+
+
+    public MovieQueryResult transform(TheMovieDBUpcoming upcomingMovies) {
+        MovieQueryResult result = new MovieQueryResult();
+        for (TheMovieDBMovie theMovieDBMovie : upcomingMovies.getSearchResults()) {
+            result.addCandidate(transform(theMovieDBMovie));
+        }
+        return result;
+    }
 
     public Movie transform( TheMovieDBMovie source ) {
         LOGGER.info( "Create movie '" + source.getTitle() + "' based on themoviedb.org source." );

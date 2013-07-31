@@ -1,6 +1,7 @@
 package com.u6f6o.apps.moviedb.web.rest;
 
 import com.u6f6o.apps.moviedb.core.api.movie.Movie;
+import com.u6f6o.apps.moviedb.core.api.movie.aggregation.MovieQueryResult;
 import com.u6f6o.apps.moviedb.core.service.MovieLoaderService;
 import com.u6f6o.apps.moviedb.ext_apis.themoviedb.domain.TheMovieDBUpcoming;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,7 +34,7 @@ public class MovieController {
 
     @ResponseBody
     @RequestMapping(method = RequestMethod.GET, value = "/upcoming", produces = "application/json")
-    public TheMovieDBUpcoming fetchUpcomingMovies() {
+    public MovieQueryResult fetchUpcomingMovies() {
         return movieLoaderService.fetchUpcomingMovies();
     }
 }

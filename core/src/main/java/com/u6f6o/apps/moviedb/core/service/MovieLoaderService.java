@@ -1,6 +1,7 @@
 package com.u6f6o.apps.moviedb.core.service;
 
 import com.u6f6o.apps.moviedb.core.api.movie.Movie;
+import com.u6f6o.apps.moviedb.core.api.movie.aggregation.MovieQueryResult;
 import com.u6f6o.apps.moviedb.core.repository.MovieRepository;
 import com.u6f6o.apps.moviedb.ext_apis.themoviedb.domain.TheMovieDBMovie;
 import com.u6f6o.apps.moviedb.ext_apis.themoviedb.domain.TheMovieDBSearchResult;
@@ -36,8 +37,14 @@ public class MovieLoaderService {
     }
 
 
-    public TheMovieDBSearchResult search(String movieTitle) {
-        return theMovieDBService.search(movieTitle);
+    public MovieQueryResult search(String movieTitle) {
+        TheMovieDBSearchResult searchResult = theMovieDBService.search(movieTitle);
+        return movieTransformerService.transform(searchResult);
+    }
+
+    public MovieQueryResult fetchUpcomingMovies() {
+        TheMovieDBUpcoming upcomingMovies = theMovieDBService.fetchUpcoming();
+        return movieTransformerService.transform(upcomingMovies);
     }
 
     public Movie load( long theMovieDBId ) {
@@ -52,10 +59,6 @@ public class MovieLoaderService {
         return translatedMovie;
     }
 
-    public TheMovieDBUpcoming fetchUpcomingMovies() {
-        return theMovieDBService.fetchUpcoming();
-    }
-
     protected Movie loadMovieFromInternalDB( long theMovieDBId ) {
         Movie fetchedMovie = movieRepository.fetchMovieByTheMovieDBId( theMovieDBId );
         LOGGER.info(( fetchedMovie != null ? "Successfully fetched" : "Unable to fetch" ) + " movie from internal "
@@ -63,7 +66,6 @@ public class MovieLoaderService {
         return fetchedMovie;
     }
 
-    // ULF use interface instead of concrete class
     protected TheMovieDBMovie loadMovieFromExternalProvider( long theMovieDBId ) {
         TheMovieDBMovie fetchedMovie = theMovieDBService.fetch(theMovieDBId, true);
         LOGGER.info(( fetchedMovie != null ? "Successfully fetched" : "Unable to fetch" ) + " movie from external "
