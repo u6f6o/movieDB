@@ -1,21 +1,6 @@
 apply plugin: 'war'
 apply plugin: 'jetty'
 
-sourceSets {
-    main {
-        resources {
-            srcDir 'src/main/java'
-            srcDir 'src/main/resources'
-        }
-    }
-    test {
-        resources {
-            srcDir 'src/test/resources'
-            srcDir 'src/test/groovy'
-        }
-    }
-}
-
 repositories {
     mavenCentral()
     mavenRepo(url: 'http://maven.springframework.org/release')

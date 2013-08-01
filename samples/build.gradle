@@ -1,12 +1,3 @@
-sourceSets {
-    main {
-        resources {
-            srcDir 'src/main/groovy'
-            srcDir 'src/main/resources'
-        }
-    }
-}
-
 jar {
     manifest {
         attributes 'Implementation-Title': 'MovieDB Samples'

@@ -1,18 +1,3 @@
-sourceSets {
-    main {
-        resources {
-            srcDir 'src/main/java'
-            srcDir 'src/main/resources'
-        }
-    }
-    test {
-        resources {
-            srcDir 'src/test/resources'
-            srcDir 'src/test/groovy'
-        }
-    }
-}
-
 jar {
     manifest {
         attributes 'Implementation-Title': 'MovieDB Core'
