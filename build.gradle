@@ -40,6 +40,7 @@ subprojects {
 
 task wrapper(type: Wrapper) {
     gradleVersion = '1.7'
+    distributionUrl = "https://u6f6o.com:8443/artifactory/moviedb-libs/gradle-${gradleVersion}-bin.zip"
 }
 
 class Version {
