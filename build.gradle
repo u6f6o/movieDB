@@ -33,7 +33,7 @@ subprojects {
 
     repositories {
         maven {
-            url "https://u6f6o.com:8443/artifactory/moviedb"
+            url "https://u6f6o.com:8443/artifactory/moviedb-libs"
         }
     }
 }
