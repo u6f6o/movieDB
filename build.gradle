@@ -33,14 +33,14 @@ subprojects {
 
     repositories {
         maven {
-            url "https://u6f6o.com:8443/artifactory/moviedb-libs"
+            url "${artifactory_repositoryUrl}"
         }
     }
 }
 
 task wrapper(type: Wrapper) {
     gradleVersion = '1.7'
-    distributionUrl = "https://u6f6o.com:8443/artifactory/moviedb-libs/gradle-${gradleVersion}-bin.zip"
+    distributionUrl = "${artifactory_repositoryUrl}/gradle-${gradleVersion}-bin.zip"
 }
 
 class Version {
