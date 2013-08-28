@@ -34,6 +34,10 @@ class MovieLoaderServiceSpec extends Specification{
     def movieSaveServiceMock = Mock(AsyncMovieSaveService)
 
 
+    def setupSpec() {
+        movieRepository.removeAll();
+    }
+
     @Unroll("should load and transform '#sampleMovie.title' from themoviedb.org" )
     def "load and transform movies from themoviedb.org"(){
         expect:
