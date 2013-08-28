@@ -34,7 +34,7 @@ class MovieLoaderServiceSpec extends Specification{
     def movieSaveServiceMock = Mock(AsyncMovieSaveService)
 
 
-    def setupSpec() {
+    def setup() {
         movieRepository.removeAll();
     }
 
