@@ -16,7 +16,6 @@ import org.springframework.data.mongodb.core.SimpleMongoDbFactory;
 public class MongoDevConfig implements EnvironmentAware{
 
     private Environment environment;
-    protected String foo;
 
     @Bean
     public MongoDbFactory mongoDbFactory() throws Exception {
