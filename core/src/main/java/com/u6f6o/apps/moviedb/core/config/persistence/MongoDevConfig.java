@@ -11,14 +11,12 @@ import org.springframework.data.mongodb.MongoDbFactory;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.SimpleMongoDbFactory;
 
-import java.util.ArrayList;
-import java.util.List;
-
 @Configuration
 @Profile( "dev" )
 public class MongoDevConfig implements EnvironmentAware{
 
     private Environment environment;
+    protected String foo;
 
     @Bean
     public MongoDbFactory mongoDbFactory() throws Exception {
@@ -29,12 +27,6 @@ public class MongoDevConfig implements EnvironmentAware{
     @Bean
     public MongoTemplate mongoTemplate() throws Exception {
         return new MongoTemplate( mongoDbFactory());
-    }
-
-    public void triggerFindbugs() {
-        List<String> test = new ArrayList<String>();
-        test.add("Foo");
-        test.contains(test);
     }
 
     private String getDBHostName(){
