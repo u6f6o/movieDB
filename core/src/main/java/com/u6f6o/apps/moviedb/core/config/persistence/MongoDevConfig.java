@@ -11,6 +11,9 @@ import org.springframework.data.mongodb.MongoDbFactory;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.SimpleMongoDbFactory;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Configuration
 @Profile( "dev" )
 public class MongoDevConfig implements EnvironmentAware{
@@ -29,8 +32,9 @@ public class MongoDevConfig implements EnvironmentAware{
     }
 
     public void triggerFindbugs() {
-        String foo = null;
-        foo.contains("1");
+        List<String> test = new ArrayList<String>();
+        test.add("Foo");
+        test.contains(test);
     }
 
     private String getDBHostName(){
