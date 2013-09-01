@@ -28,6 +28,11 @@ public class MongoDevConfig implements EnvironmentAware{
         return new MongoTemplate( mongoDbFactory());
     }
 
+    public void triggerFindbugs() {
+        String foo = null;
+        foo.contains("1");
+    }
+
     private String getDBHostName(){
         return environment.getProperty("DB_HOST_NAME");
     }
