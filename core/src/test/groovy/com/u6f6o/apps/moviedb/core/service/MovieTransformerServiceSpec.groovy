@@ -43,7 +43,7 @@ class MovieTransformerServiceSpec extends Specification{
         then:
             1 * result.setTitle("Machete")
             1 * result.setDescription({it.startsWith("Former Mexican Federale Machete")})
-            1 * result.setReleaseDate(new DateTime().withDate(2010, 9, 2).toLocalDate().toDate())
+            1 * result.setReleaseDate(new DateTime().withDate(2010, 9, 1).toLocalDate().toDate())
             1 * result.setRuntime(105)
             1 * result.setGenres(new LinkedHashSet<Genre>([ACTION, COMEDY, THRILLER]))
             1 * result.setCast({it.actors.size() == 13 && it.crew.size() == 18})
