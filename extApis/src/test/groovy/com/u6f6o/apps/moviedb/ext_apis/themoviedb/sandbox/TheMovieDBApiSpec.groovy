@@ -66,7 +66,7 @@ class TheMovieDBApiSpec extends Specification {
             castAsJSON.cast.any{ it.name == mainActor }
         where:
             movieId | title        | nrOfActors | nrOfCrewMembers | mainActor
-            "1422"  | "Inception"  | 16         | 10              | "Leonardo DiCaprio"
+            "1422"  | "Inception"  | 16         | 13              | "Leonardo DiCaprio"
             "23631" | "Machete"    | 13         | 18              | "Danny Trejo"
             "7549"  | "Fearless"   | 15         | 9               | "Jet Li"
     }

@@ -1,6 +1,6 @@
 {
     "adult":false,
-    "backdrop_path":"/qayeOS1ySq99RmGKiELH7sCOLpv.jpg",
+    "backdrop_path":"/qVVNK28vyKxFMUwhMcSFKu5R9Ue.jpg",
     "budget":20000000,
     "genres":[
         {"id":28,"name":"Action"},
@@ -21,7 +21,7 @@
     "production_countries":[
         {"iso_3166_1":"US","name":"United States of America"}
     ],
-    "release_date":"2010-09-02",
+    "release_date":"2010-09-01",
     "revenue":31327899,
     "runtime":105,
     "spoken_languages":[

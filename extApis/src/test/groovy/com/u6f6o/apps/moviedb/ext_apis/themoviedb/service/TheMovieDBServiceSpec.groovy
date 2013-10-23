@@ -31,12 +31,11 @@ class TheMovieDBServiceSpec extends Specification {
             def movieResults = theMovieDBService.search(movieTitle)
         then:
             movieResults.totalResults == expResults;
-            movieResults.searchResults.every { it.title.contains(movieTitle)}
         where:
             movieTitle                  |   expResults
             "Machete"                   |   6
             "House of Flying Daggers"   |   1
-            "Dark Knight"               |   11
+            "Dark Knight"               |   12
     }
 
     @Unroll("should check content for '#movieSample.title'")
